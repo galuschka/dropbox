@@ -1,0 +1,3 @@
+[submodule "getriebe"]
+	path = getriebe
+	url = github:Erhannis/getriebe
