@@ -22,7 +22,7 @@ riegel    =  40; // Viertelkreis (aussen)
 box_t     = 200; // Tiefe
 box_h     = 200; // Hoehe der "0-Ebene" (Unterkante der Klappe)
 
-// $vpr = [70 + (40 * $t), 0, -$t * 270];
+$vpr = [70 + (40 * $t), 0, -$t * 270];
 
 // Animation: Gewichtung der Phasen:
 weight = [ 1, 4,  // pause, unlock
