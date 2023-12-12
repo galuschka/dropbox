@@ -22,7 +22,7 @@ riegel    =  40; // Viertelkreis (aussen)
 box_t     = 200; // Tiefe
 box_h     = 200; // Hoehe der "0-Ebene" (Unterkante der Klappe)
 
-$vpr = [70 + (40 * $t), 0, -$t * 270];
+$vpr = [70 + (40 * (1-abs(2*$t-1))), 0, -$t * 360];
 
 // Animation: Gewichtung der Phasen:
 weight = [ 1, 4,  // pause, unlock
@@ -32,7 +32,7 @@ weight = [ 1, 4,  // pause, unlock
            2, 3,  // drop1, drop2
            1, 4,  // pause, rev-open,
            1, 4,  // fade-out, rev-close
-           1      // pause
+           8      // pause
 ];
 function sum(list, c = 0) =
     c < len(list) - 1
